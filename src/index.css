@@ -12,4 +12,7 @@ form {
   border: 1px solid gray;
   width: 600px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
