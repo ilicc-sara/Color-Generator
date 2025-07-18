@@ -7,3 +7,9 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 }
+
+form {
+  border: 1px solid gray;
+  width: 600px;
+  margin: 0 auto;
+}
