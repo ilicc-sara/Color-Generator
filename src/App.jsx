@@ -8,11 +8,17 @@ function App() {
 
   console.log(myRef.current?.value);
 
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    console.log(colorValue);
+  }
+
   return (
     <>
       <h2>Clor Generator (tints and shades)</h2>
 
-      <form>
+      <form onSubmit={handleSubmit}>
         <label>Set Color</label>
         <input
           ref={myRef}
