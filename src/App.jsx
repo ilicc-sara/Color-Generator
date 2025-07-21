@@ -4,14 +4,16 @@ import "./App.css";
 function App() {
   const [count, setCount] = useState(0);
   const myRef = useRef();
-  const [colorValue, setColorValue] = useState();
-
-  console.log(myRef.current?.value);
+  const [colorValue, setColorValue] = useState("ffffff");
 
   function handleSubmit(e) {
     e.preventDefault();
 
     console.log(colorValue);
+
+    if (myRef.current) {
+      myRef.current.style.backgroundColor = colorValue;
+    }
   }
 
   return (
@@ -21,14 +23,18 @@ function App() {
       <form onSubmit={handleSubmit}>
         <label>Set Color</label>
         <input
-          ref={myRef}
           type="color"
           value={colorValue}
           onChange={(e) => setColorValue(e.target.value)}
         />
-        <input type="text" value={colorValue} />
+        <input
+          type="text"
+          value={colorValue}
+          onChange={(e) => setColorValue(e.target.value)}
+        />
         <button>Submit</button>
       </form>
+      <div ref={myRef} className="color-tab"></div>
     </>
   );
 }

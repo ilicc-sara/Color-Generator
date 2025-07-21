@@ -18,3 +18,10 @@ form {
   gap: 10px;
   padding: 20px;
 }
+
+.color-tab {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: pink;
+}
