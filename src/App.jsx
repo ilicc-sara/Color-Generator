@@ -1,20 +1,26 @@
 import { useState, useRef } from "react";
 import "./App.css";
 import Form from "./Form";
+import ColorList from "./ColorList";
+import Values from "values.js";
+
+// new Values("#f15025").all(10);
 
 function App() {
-  const myRef = useRef();
-  const [colorValue, setColorValue] = useState("ffffff");
+  const [colors, setColors] = useState([]);
+  console.log(new Values("#f15025").all(10));
+  // const myRef = useRef();
+  // const [colorValue, setColorValue] = useState("ffffff");
 
-  function handleSubmit(e) {
-    e.preventDefault();
+  // function handleSubmit(e) {
+  //   e.preventDefault();
 
-    console.log(colorValue);
+  //   console.log(colorValue);
 
-    if (myRef.current) {
-      myRef.current.style.backgroundColor = colorValue;
-    }
-  }
+  //   if (myRef.current) {
+  //     myRef.current.style.backgroundColor = colorValue;
+  //   }
+  // }
 
   return (
     <>
@@ -36,6 +42,7 @@ function App() {
       </form>
       <div ref={myRef} className="color-tab"></div> */}
       <Form />
+      <ColorList />
     </>
   );
 }
