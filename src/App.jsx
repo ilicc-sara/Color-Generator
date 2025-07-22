@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import "./App.css";
+import Form from "./Form";
 
 function App() {
   const myRef = useRef();
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <>
-      <h2>Clor Generator (tints and shades)</h2>
+      {/* <h2>Clor Generator (tints and shades)</h2>
 
       <form onSubmit={handleSubmit}>
         <label>Set Color</label>
@@ -33,7 +34,8 @@ function App() {
         />
         <button>Submit</button>
       </form>
-      <div ref={myRef} className="color-tab"></div>
+      <div ref={myRef} className="color-tab"></div> */}
+      <Form />
     </>
   );
 }
