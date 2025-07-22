@@ -42,7 +42,7 @@ function App() {
       </form>
       <div ref={myRef} className="color-tab"></div> */}
       <Form />
-      <ColorList />
+      <ColorList colors={colors} />
     </>
   );
 }
