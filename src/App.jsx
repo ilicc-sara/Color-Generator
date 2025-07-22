@@ -2,7 +2,6 @@ import { useState, useRef } from "react";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
   const myRef = useRef();
   const [colorValue, setColorValue] = useState("ffffff");
 
