@@ -8,10 +8,15 @@
   background-color: #242424;
 }
 
+.container {
+  text-align: left;
+  padding: 0 30px;
+}
+
 form {
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   width: 600px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,4 +29,9 @@ form {
   height: 200px;
   margin: 0 auto;
   background-color: pink;
+}
+
+.colors {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }

@@ -9,7 +9,7 @@ function Form({ addColor }) {
 
   return (
     <section className="container">
-      <h4>Color Generator</h4>
+      <h1>Color Generator</h1>
 
       <form className="color-form" onSubmit={handleSubmit}>
         <input
