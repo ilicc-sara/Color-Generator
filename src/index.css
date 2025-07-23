@@ -44,13 +44,6 @@ form {
   font-size: 18px;
 }
 
-.color-tab {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-  background-color: pink;
-}
-
 .colors {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
