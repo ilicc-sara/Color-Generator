@@ -13,11 +13,13 @@ function Form({ addColor }) {
 
       <form className="color-form" onSubmit={handleSubmit}>
         <input
+          className="input-color"
           type="color"
           value={color}
           onChange={(e) => setColor(e.target.value)}
         />
         <input
+          className="input-text-color"
           type="text"
           value={color}
           onChange={(e) => setColor(e.target.value)}

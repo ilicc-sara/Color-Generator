@@ -5,6 +5,8 @@ import { nanoid } from "nanoid";
 function ColorList({ colors }) {
   return (
     <section className="colors">
+      {/* <div className="tints"></div>
+      <div className="shades"></div> */}
       {colors.map((color, index) => (
         <SingleColor key={nanoid()} index={index} color={color} />
       ))}

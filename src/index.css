@@ -15,13 +15,33 @@
 
 form {
   /* border: 1px solid gray; */
-  width: 600px;
+  width: fit-content;
   /* margin: 0 auto; */
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 20px;
+}
+
+.input-color {
+  border: none;
+  height: 40px;
+  width: 60px;
+}
+
+.input-text-color {
+  height: 40px;
+  width: 300px;
+  font-size: 26px;
+  padding-left: 15px;
+}
+
+.btn {
+  height: 40px;
+  width: fit-content;
+  padding: 0 10px;
+  font-size: 18px;
 }
 
 .color-tab {
