@@ -14,6 +14,18 @@ function App() {
   toast.error("error");
   toast.success("success");
 
+  function addColor(color) {
+    console.log(color);
+
+    try {
+      const newColors = new Values(color);
+      setColors(newColors);
+    } catch (error) {
+      console.log(error.message);
+      toast.error(error.message);
+    }
+  }
+
   // const myRef = useRef();
   // const [colorValue, setColorValue] = useState("ffffff");
 
@@ -47,7 +59,7 @@ function App() {
         <button>Submit</button>
       </form>
       <div ref={myRef} className="color-tab"></div> */}
-      <Form />
+      <Form addColor={addColor} />
       <ColorList colors={colors} />
     </>
   );
